@@ -4,3 +4,4 @@ main.js
 main.js.map 
 settings.js
 @types/
+.DS_Store
