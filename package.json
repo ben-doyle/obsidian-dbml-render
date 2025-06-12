@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "bundle": "esbuild main.ts --bundle --platform=node --target=es2020 --outfile=obsidian-dbml-render/main.js --external:obsidian --format=cjs"
+    "build": "tsc && cp styles.css manifest.json obsidian-dbml-render/",
+    "bundle": "esbuild main.ts --bundle --platform=node --target=es2020 --outfile=obsidian-dbml-render/main.js --external:obsidian --format=cjs && cp manifest.json styles.css obsidian-dbml-render/"
   },
   "keywords": [],
   "author": "",
