@@ -1,0 +1,24 @@
+{
+  "name": "obsidian-dbml-render",
+  "version": "1.0.0",
+  "description": "Render DBML diagrams in your Obsidian notes using the open-source dbml-render library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "bundle": "esbuild main.ts --bundle --platform=node --target=es2020 --outfile=obsidian-dbml-render/main.js --external:obsidian --format=cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@softwaretechnik/dbml-renderer": "^1.0.30",
+    "viz.js": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/viz.js": "^2.1.5",
+    "esbuild": "^0.25.5",
+    "obsidian": "^1.8.7",
+    "typescript": "^5.8.3"
+  }
+}
