@@ -2,6 +2,8 @@
 
 Render DBML diagrams in your Obsidian notes using the open-source dbml-render library.
 
+<img width="1160" height="661" alt="image" src="https://github.com/user-attachments/assets/b8d69c53-820a-4a84-8ce1-c45beeb80cbe" />
+
 ## Usage
 
 Write [DBML](https://dbml.dbdiagram.io/home) code blocks in your notes:
@@ -20,8 +22,9 @@ Table users {
 - Customizable appearance via settings
 
 ## Installation
-1. Copy the plugin's distribution folder (called `obsidian-dbml-render`) to your Obsidian vault's plugins directory.
-2. Enable the plugin in Obsidian settings. 
+1. Run `npm run build`
+2. Copy the plugin's distribution folder (called `obsidian-dbml-render`) to your Obsidian vault's plugins directory.
+3. Enable the plugin in Obsidian settings. 
 
 ## via BRAT
 1. Navigate to the BRAT plugin settings in Obsidian and click Add Beta Plugin.
