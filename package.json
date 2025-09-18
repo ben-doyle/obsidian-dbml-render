@@ -5,20 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && cp styles.css manifest.json obsidian-dbml-render/",
-    "bundle": "esbuild main.ts --bundle --platform=node --target=es2020 --outfile=obsidian-dbml-render/main.js --external:obsidian --format=cjs && cp manifest.json styles.css obsidian-dbml-render/ && cp -R obsidian-dbml-render /Users/lendamico/obsidian_local/eldee/.obsidian/plugins/"
+    "build": "tsc && esbuild main.ts --bundle --platform=node --target=es2020 --outfile=obsidian-dbml-render/main.js --external:obsidian --format=cjs && cp manifest.json styles.css obsidian-dbml-render/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@softwaretechnik/dbml-renderer": "^1.0.30",
-    "viz.js": "^2.1.2"
+    "@softwaretechnik/dbml-renderer": "1.0.31",
+    "viz.js": "2.1.2"
   },
   "devDependencies": {
-    "@types/viz.js": "^2.1.5",
-    "esbuild": "^0.25.5",
-    "obsidian": "^1.8.7",
-    "typescript": "^5.8.3"
+    "@types/viz.js": "2.1.5",
+    "esbuild": "0.25.10",
+    "obsidian": "1.8.7",
+    "typescript": "5.9.2"
   }
 }
